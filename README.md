@@ -31,9 +31,8 @@ This project is an agent-based model (ABM) that simulates footfall traffic to va
 3.  **Execute the Script:**
     Run the simulation from your terminal:
     ```bash
-    python your_script_name.py
+    python main.py
     ```
-    *(Replace `your_script_name.py` with the name of your Python file)*
 
 ## Configuration
 
