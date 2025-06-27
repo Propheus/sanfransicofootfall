@@ -1,0 +1,36 @@
+Agent Initialization
+Each agent is instantiated with unique attributes influencing decision-making:
+Hunger Level: Scaled from 0 to 1, increasing over time.
+Patience Threshold: Determines how long an agent is willing to wait in a queue.
+Income Bracket & Price Sensitivity: Dictates affordability and willingness to spend.
+Brand Loyalty & Preferences: Affects restaurant selection based on prior experiences.
+Decision Cycle (Per Timestep)
+At each simulation step, agents dynamically adjust behavior based on internal states and environmental conditions:
+Hunger Progression: Gradual increase in hunger level.
+Patience Decay: Reduction in willingness to wait if already in a queue.
+Decision Logic:
+If not hungry → Continue random movement.
+If hungry → Evaluate available restaurant options.
+If in queue and waiting too long → Potentially leave.
+Restaurant Selection Criteria
+When deciding where to dine, agents assess multiple factors:
+Proximity: Distance to the restaurant.
+Wait Time: Current queue length and estimated service speed.
+Affordability: Price vs personal budget constraints.
+Past Experiences: Satisfaction history with the establishment.
+Brand Influence: Reputation, marketing, and loyalty factors.
+Dining & Transaction Process
+Upon choosing a restaurant, agents follow a structured dining flow:
+Queue Handling: If seating is unavailable, agents wait or reconsider.
+Dining Phase: Once seated, agents consume food for a designated duration.
+Payment & Exit: Agents pay based on the restaurant’s pricing tier.
+Experience Logging: Agents update internal satisfaction metrics.
+Memory & Behavioral Adaptation
+Post-dining, agents refine future decision-making based on experiences:
+Preference Adjustment: Updates in restaurant selection tendencies.
+Visit History Tracking: Logs frequency and satisfaction scores.
+Brand Loyalty Dynamics: Positive experiences reinforce repeat visits.
+Simulation Execution
+The system runs for 1,000 timesteps to observe long-term patterns.
+At timestep 500, an economic shock occurs, impacting restaurant operations and modifying agent behaviors in response to market changes.
+
