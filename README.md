@@ -37,3 +37,7 @@ This project is an agent-based model (ABM) that simulates footfall traffic to va
 ## Configuration
 
 Key simulation parameters (e.g., `SIMULATION_ADDRESS`, `SIMULATION_HOURS_TOTAL`) can be easily modified in the **"Configuration and Constants"** section at the top of the Python script.
+
+##Additional Files
+
+The scripts generated_agent and archetype_restaurant_choice generate agents based on San Francisco census data, categorizing them into 1,000 distinct archetypes derived from that data.
