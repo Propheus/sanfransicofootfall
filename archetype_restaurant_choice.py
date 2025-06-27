@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 from typing import Dict, List, Optional
 
 # Initialize OpenAI client
-client = OpenAI(api_key="sk-proj-YpGRHNbs8pQaQpJXqI8MT3BlbkFJV68vFPa3I1q4hNiggdnj")
+client = OpenAI(api_key=OPENAI_API_KEY)
 
 # Simple cache for probability distributions
 cache = {}
